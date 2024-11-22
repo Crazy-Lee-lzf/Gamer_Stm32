@@ -28,7 +28,9 @@
 #include "./BSP/SDRAM/sdram.h"
 #include "./BSP/BTIM/btim.h"
 #include "Task.h"
+#include "Snake.h"
 
+uint8_t cnt = 0;
 
 void Init(){
 		sys_cache_enable();                         /* 打开L1-Cache */
@@ -56,9 +58,12 @@ int main(void)
     while (1)
     {
 			for(i = 0;i < TaskNum;i++){
+				cnt++;
 				if(myTask[i].run == 1){		//如果标志位为1 说明任务要开始运行了
 					myTask[i].Task();				//运行任务
 					myTask[i].run = 0;			//运行结束  标志位置0 等待下一次执行
+					srand(cnt);
+					if(cnt > 114) cnt = 0;
 				}
 			}
     }

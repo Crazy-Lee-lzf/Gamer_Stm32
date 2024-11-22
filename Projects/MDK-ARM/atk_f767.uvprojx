@@ -594,6 +594,16 @@
               <FileType>5</FileType>
               <FilePath>..\..\APP\Task.h</FilePath>
             </File>
+            <File>
+              <FileName>Snake.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\APP\Snake.c</FilePath>
+            </File>
+            <File>
+              <FileName>Snake.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\APP\Snake.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
