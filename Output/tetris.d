@@ -91,3 +91,4 @@
 ..\..\output\tetris.o: ..\..\Drivers\./BSP/BTIM/btim.h
 ..\..\output\tetris.o: ..\..\APP\Task.h
 ..\..\output\tetris.o: ..\..\APP\Tetris.h
+..\..\output\tetris.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\string.h

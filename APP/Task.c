@@ -18,7 +18,7 @@ uint16_t Key1Cnt = 0;
 uint16_t Key2Cnt = 0;
 uint16_t Key3Cnt = 0;
 
-uint8_t GameNum = 1;
+uint8_t GameNum = 2;
 extern uint8_t SnakeDir;
 
 //添加任务	是否运行（初始化的时候都是0）		第一次什么时候开始运行			运行的间隔				运行的函数
@@ -46,6 +46,7 @@ void Check_Key0(void){
 		//按键抬起
 		if(Key0Cnt > 0 && Key0Cnt < 20){
 			if(GameNum == 1)	Sanke_Right();
+			else if(GameNum == 2) Tetris_Right();
 		}
 		Key0Cnt = 0;
 	}
@@ -59,7 +60,8 @@ void Check_Key1(void){
 	else {
 		//按键抬起
 		if(Key1Cnt > 0 && Key1Cnt < 20){
-			Sanke_Down();
+			if(GameNum == 1) Sanke_Down();
+			else if(GameNum == 2) Tetris_Down();
 		}
 		Key1Cnt = 0;
 	}
@@ -72,7 +74,8 @@ void Check_Key2(void){
 	else {
 		//按键抬起
 		if(Key2Cnt > 0 && Key2Cnt < 20){
-			Sanke_Left();
+			if(GameNum == 1) Sanke_Left();
+			else if(GameNum == 2) Tetris_Left();
 		}
 		Key2Cnt = 0;
 	}
@@ -87,7 +90,8 @@ void Check_Key3(void){
 	else {
 		//按键抬起
 		if(Key3Cnt > 0 && Key3Cnt < 20){
-			Sanke_Up();
+			if(GameNum == 1) Sanke_Up();
+			else if(GameNum == 2) Tetris_Up();
 		}
 		Key3Cnt = 0;
 	}
