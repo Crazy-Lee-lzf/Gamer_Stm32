@@ -82,6 +82,7 @@ void Check_Key2(void){
 }
 
 //注意KEY3 是下拉 默认低电平 按下高电平
+uint8_t f = 0;
 void Check_Key3(void){
 	//如果按键处于按下状态
 	if(WK_UP == 1){
@@ -92,7 +93,10 @@ void Check_Key3(void){
 		if(Key3Cnt > 0 && Key3Cnt < 20){
 			if(GameNum == 1) Sanke_Up();
 			else if(GameNum == 2) Tetris_Up();
-			srand(Key3Cnt);
+			if(f == 0){
+				srand(Key3Cnt);
+				f = 1;
+			}
 		}
 		Key3Cnt = 0;
 	}

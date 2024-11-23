@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\..\Output\atk_f767.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\..\Output\atk_f767.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Sat Nov 23 21:46:19 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Sat Nov 23 22:06:43 2024
 <BR><P>
 <H3>Maximum Stack Usage =        356 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -303,8 +303,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ff]"></a>rand</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, rand.o(.emb_text))
-<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Snake_Run
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;New_Block
+<BR><BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;New_Block
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Snake_Run
 </UL>
 
 <P><STRONG><a name="[3]"></a>Reset_Handler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, startup_stm32f767xx.o(.text))
@@ -657,8 +657,8 @@ Global Symbols
 <P><STRONG><a name="[9c]"></a>srand</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, rand.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = srand
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check_Key3
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rand_init
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rand_init
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check_Key3
 </UL>
 
 <P><STRONG><a name="[8e]"></a>_rand_init</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, rand.o(.text))
@@ -670,12 +670,12 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[100]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
+<BR><BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Refresh
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;New_Block
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Right
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Left
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Down
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Refresh
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;New_Block
 </UL>
 
 <P><STRONG><a name="[9d]"></a>__rt_memcpy</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
@@ -687,12 +687,12 @@ Global Symbols
 <P><STRONG><a name="[9e]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memcpy4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_LTDC_ConfigLayer
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Right
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Left
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Down
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_LTDC_ConfigLayer
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
 </UL>
 
 <P><STRONG><a name="[15e]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)
@@ -783,11 +783,11 @@ Global Symbols
 <P><STRONG><a name="[101]"></a>Check</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, tetris.o(i.Check))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Check
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
+<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;New_Block
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Right
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Left
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Down
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;New_Block
 </UL>
 
 <P><STRONG><a name="[10b]"></a>CheckDie</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, snake.o(i.CheckDie))
@@ -797,37 +797,37 @@ Global Symbols
 <P><STRONG><a name="[81]"></a>Check_Key0</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, task.o(i.Check_Key0))
 <BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = Check_Key0 &rArr; Tetris_Right &rArr; Tetris_Refresh &rArr; Draw_Block &rArr; lcd_fill &rArr; ltdc_fill
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Right
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Right
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sanke_Right
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> task.o(i.Task_Init)
 </UL>
 <P><STRONG><a name="[82]"></a>Check_Key1</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, task.o(i.Check_Key1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = Check_Key1 &rArr; Tetris_Down &rArr; New_Block &rArr; Tetris_Refresh &rArr; Draw_Block &rArr; lcd_fill &rArr; ltdc_fill
 </UL>
-<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Down
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Down
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sanke_Down
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> task.o(i.Task_Init)
 </UL>
 <P><STRONG><a name="[83]"></a>Check_Key2</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, task.o(i.Check_Key2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = Check_Key2 &rArr; Tetris_Left &rArr; Tetris_Refresh &rArr; Draw_Block &rArr; lcd_fill &rArr; ltdc_fill
 </UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Left
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Left
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sanke_Left
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> task.o(i.Task_Init)
 </UL>
-<P><STRONG><a name="[84]"></a>Check_Key3</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, task.o(i.Check_Key3))
+<P><STRONG><a name="[84]"></a>Check_Key3</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, task.o(i.Check_Key3))
 <BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = Check_Key3 &rArr; Tetris_Up &rArr; Tetris_Refresh &rArr; Draw_Block &rArr; lcd_fill &rArr; ltdc_fill
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sanke_Up
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sanke_Up
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> task.o(i.Task_Init)
 </UL>
@@ -1024,8 +1024,8 @@ Global Symbols
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_GetPriorityGrouping
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
 </UL>
 
 <P><STRONG><a name="[b0]"></a>HAL_NVIC_SetPriorityGrouping</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, stm32f7xx_hal_cortex.o(i.HAL_NVIC_SetPriorityGrouping))
@@ -1172,8 +1172,8 @@ Global Symbols
 <P><STRONG><a name="[d5]"></a>HAL_TIM_Base_Init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, stm32f7xx_hal_tim.o(i.HAL_TIM_Base_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = HAL_TIM_Base_Init &rArr; HAL_TIM_Base_MspInit &rArr; HAL_NVIC_SetPriority &rArr; __NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Base_SetConfig
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_MspInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;btim_timx_int_init
 </UL>
@@ -1198,14 +1198,14 @@ Global Symbols
 <P><STRONG><a name="[d9]"></a>HAL_TIM_IRQHandler</STRONG> (Thumb, 440 bytes, Stack size 8 bytes, stm32f7xx_hal_tim.o(i.HAL_TIM_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_TIM_IRQHandler &rArr; HAL_TIM_PeriodElapsedCallback
 </UL>
-<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PeriodElapsedCallback
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_TriggerCallback
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_TriggerCallback
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_PulseFinishedCallback
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_OC_DelayElapsedCallback
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_IC_CaptureCallback
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_CommutCallback
 <LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_BreakCallback
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIMEx_Break2Callback
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PeriodElapsedCallback
 </UL>
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM6_DAC_IRQHandler
 </UL>
@@ -1417,8 +1417,8 @@ Global Symbols
 <P><STRONG><a name="[106]"></a>Snake_Run</STRONG> (Thumb, 286 bytes, Stack size 32 bytes, snake.o(i.Snake_Run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Snake_Run
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckDie
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckDie
 </UL>
 <BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Refresh_Snake
 </UL>
@@ -1496,17 +1496,17 @@ Global Symbols
 <P><STRONG><a name="[103]"></a>Tetris_Refresh</STRONG> (Thumb, 172 bytes, Stack size 72 bytes, tetris.o(i.Tetris_Refresh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = Tetris_Refresh &rArr; Draw_Block &rArr; lcd_fill &rArr; ltdc_fill
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_fill
-<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Update
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Draw_Block
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_fill
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
+<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;New_Block
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Up
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Right
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Left
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Down
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;New_Block
 </UL>
 
 <P><STRONG><a name="[a7]"></a>Tetris_Right</STRONG> (Thumb, 96 bytes, Stack size 96 bytes, tetris.o(i.Tetris_Right))
@@ -1642,8 +1642,8 @@ Global Symbols
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_set_cursor
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
-<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Snake_Init
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Refresh
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Snake_Init
 </UL>
 
 <P><STRONG><a name="[117]"></a>lcd_display_dir</STRONG> (Thumb, 390 bytes, Stack size 8 bytes, lcd.o(i.lcd_display_dir))
@@ -1751,9 +1751,9 @@ Global Symbols
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_ram_prepare
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_set_cursor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Refresh_Snake
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Refresh
+<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Tetris_Refresh
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Draw_Block
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Refresh_Snake
 </UL>
 
 <P><STRONG><a name="[f7]"></a>lcd_init</STRONG> (Thumb, 1266 bytes, Stack size 88 bytes, lcd.o(i.lcd_init))
@@ -1761,6 +1761,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FMC_NORSRAM_Extended_Timing_Init
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SRAM_Init
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ltdc_panelid_read
@@ -1779,7 +1780,6 @@ Global Symbols
 <LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_display_dir
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
 <LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_rd_data
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init
 </UL>
@@ -1912,14 +1912,14 @@ Global Symbols
 <P><STRONG><a name="[128]"></a>ltdc_init</STRONG> (Thumb, 654 bytes, Stack size 24 bytes, ltdc.o(i.ltdc_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = ltdc_init &rArr; ltdc_clk_set &rArr; HAL_RCCEx_PeriphCLKConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ltdc_select_layer
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_LTDC_Init
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ltdc_select_layer
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ltdc_layer_window_config
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ltdc_layer_parameter_config
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ltdc_clk_set
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ltdc_panelid_read
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ltdc_clear
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_LTDC_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 </UL>
@@ -1985,9 +1985,9 @@ Global Symbols
 <P><STRONG><a name="[f6]"></a>sdram_init</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, sdram.o(i.sdram_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = sdram_init &rArr; sdram_initialization_sequence &rArr; sdram_send_cmd &rArr; HAL_SDRAM_SendCommand &rArr; FMC_SDRAM_SendCommand
 </UL>
-<BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdram_initialization_sequence
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SDRAM_ProgramRefreshRate
+<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SDRAM_ProgramRefreshRate
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SDRAM_Init
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sdram_initialization_sequence
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init
 </UL>
