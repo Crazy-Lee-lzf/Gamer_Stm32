@@ -92,6 +92,7 @@ void Check_Key3(void){
 		if(Key3Cnt > 0 && Key3Cnt < 20){
 			if(GameNum == 1) Sanke_Up();
 			else if(GameNum == 2) Tetris_Up();
+			srand(Key3Cnt);
 		}
 		Key3Cnt = 0;
 	}
@@ -109,7 +110,7 @@ void Led1(void){
 //初始化 添加任务
 void Task_Init(void){
 	//Task_Add(1, 150, 40, Refresh_Snake);
-	Task_Add(1, 200, 40, Tetris_Refresh);
+	Task_Add(1, 200, 40, Tetris_Down);
 	
 	Task_Add(0, 5, 5, Check_Key0);		//按键是50ms扫描一次
 	Task_Add(0, 5, 5, Check_Key1);
