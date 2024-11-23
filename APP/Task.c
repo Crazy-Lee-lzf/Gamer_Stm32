@@ -8,6 +8,7 @@
 #include "./BSP/SDRAM/sdram.h"
 #include "Task.h"
 #include "Snake.h"
+#include "Tetris.h"
 
 TASK_COM_INFO myTask[MaxTaskNum];
 uint8_t TaskNum = 0;
@@ -33,7 +34,7 @@ void Task_Add(uint8_t run, uint16_t t, uint16_t Time, void(*Task) (void)){
 //检测四个按键
 /*********************************
 板子上按键位置
-			KEY3
+		KEY3
 KEY2	KEY1	KEY0
 **********************************/
 void Check_Key0(void){
@@ -43,10 +44,8 @@ void Check_Key0(void){
 	}
 	else {
 		//按键抬起
-		if(Key0Cnt > 0 && Key0Cnt < 10){
-			SnakeDir = 1;
-			Refresh_Snake();
-			myTask[0].t = myTask[0].Time;
+		if(Key0Cnt > 0 && Key0Cnt < 20){
+			if(GameNum == 1)	Sanke_Right();
 		}
 		Key0Cnt = 0;
 	}
@@ -59,10 +58,8 @@ void Check_Key1(void){
 	}
 	else {
 		//按键抬起
-		if(Key1Cnt > 0 && Key1Cnt < 10){
-			SnakeDir = 4;
-			Refresh_Snake();
-			myTask[0].t = myTask[0].Time;
+		if(Key1Cnt > 0 && Key1Cnt < 20){
+			Sanke_Down();
 		}
 		Key1Cnt = 0;
 	}
@@ -74,10 +71,8 @@ void Check_Key2(void){
 	}
 	else {
 		//按键抬起
-		if(Key2Cnt > 0 && Key2Cnt < 10){
-			SnakeDir = 3;
-			Refresh_Snake();
-			myTask[0].t = myTask[0].Time;
+		if(Key2Cnt > 0 && Key2Cnt < 20){
+			Sanke_Left();
 		}
 		Key2Cnt = 0;
 	}
@@ -91,10 +86,8 @@ void Check_Key3(void){
 	}
 	else {
 		//按键抬起
-		if(Key3Cnt > 0 && Key3Cnt < 10){
-			SnakeDir = 2;
-			Refresh_Snake();
-			myTask[0].t = myTask[0].Time;
+		if(Key3Cnt > 0 && Key3Cnt < 20){
+			Sanke_Up();
 		}
 		Key3Cnt = 0;
 	}
@@ -102,23 +95,17 @@ void Check_Key3(void){
 
 //LEE0 红灯闪烁 运行指示灯
 void Led0(void){
-	LED1_TOGGLE();
+	LED0_TOGGLE();
 }
 
 void Led1(void){
 		;
 }
 
-//串口输出两个灯的周期和占空比
-void SendMess(void){
-	;
-}
-
-
-
 //初始化 添加任务
 void Task_Init(void){
-	Task_Add(1, 150, 40, Refresh_Snake);
+	//Task_Add(1, 150, 40, Refresh_Snake);
+	Task_Add(1, 200, 40, Tetris_Refresh);
 	
 	Task_Add(0, 5, 5, Check_Key0);		//按键是50ms扫描一次
 	Task_Add(0, 5, 5, Check_Key1);
@@ -126,8 +113,6 @@ void Task_Init(void){
 	Task_Add(0, 5, 5, Check_Key3);
 	
 	Task_Add(0, 25, 50, Led0);
-	
-	
 	
 }
 	

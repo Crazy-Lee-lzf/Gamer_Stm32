@@ -90,3 +90,4 @@
 ..\..\output\task.o: ..\..\Drivers\./BSP/SDRAM/sdram.h
 ..\..\output\task.o: ..\..\APP\Task.h
 ..\..\output\task.o: ..\..\APP\Snake.h
+..\..\output\task.o: ..\..\APP\Tetris.h

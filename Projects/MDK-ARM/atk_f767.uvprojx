@@ -604,6 +604,16 @@
               <FileType>5</FileType>
               <FilePath>..\..\APP\Snake.h</FilePath>
             </File>
+            <File>
+              <FileName>Tetris.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\APP\Tetris.c</FilePath>
+            </File>
+            <File>
+              <FileName>Tetris.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\APP\Tetris.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

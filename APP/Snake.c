@@ -9,21 +9,23 @@
 #include "./BSP/BTIM/btim.h"
 #include "Task.h"
 
-const uint8_t N = 21, M = 31;
-const uint16_t Startx = 20, Starty = 100;
-uint8_t Headx = 3, Heady = 3;
+static const uint8_t N = 21, M = 31;
+static const uint16_t Startx = 20, Starty = 100;
 
-uint16_t map[23][33];
-uint16_t SnakeLenth;
+extern TASK_COM_INFO myTask[MaxTaskNum];
 
-//вСиосроб
-int8_t dx[5] = {0, 1, 0, -1, 0};
-int8_t dy[5] = {0, 0, -1, 0, 1};
+static uint8_t Headx = 3, Heady = 3;
 
-uint8_t SnakeDir;
-uint8_t Foodx, Foody;
+static uint16_t map[23][33];
+static uint16_t SnakeLenth;
 
-uint8_t Start = 0;
+static int8_t dx[5] = {0, 1, 0, -1, 0};
+static int8_t dy[5] = {0, 0, -1, 0, 1};
+
+static uint8_t SnakeDir;
+static uint8_t Foodx, Foody;
+
+static uint8_t Start = 0;
 
 uint16_t transx(uint8_t x){
 	return Startx + 20 * x - 1;
@@ -125,6 +127,30 @@ void Refresh_Snake(void){
 	
 }
 
+
+void Sanke_Up(void){
+	SnakeDir = 2;
+	Refresh_Snake();
+	myTask[0].t = myTask[0].Time;
+}        
+
+void Sanke_Down(void){
+	SnakeDir = 4;
+	Refresh_Snake();
+	myTask[0].t = myTask[0].Time;
+}
+
+void Sanke_Left(void){
+	SnakeDir = 3;
+	Refresh_Snake();
+	myTask[0].t = myTask[0].Time;
+}
+
+void Sanke_Right(void){
+	SnakeDir = 1;
+	Refresh_Snake();
+	myTask[0].t = myTask[0].Time;
+}
 
 
 
