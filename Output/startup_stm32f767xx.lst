@@ -989,11 +989,11 @@ ARM Macro Assembler    Page 16
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M7.fp.dp --apcs=
 interwork --depend=..\..\output\startup_stm32f767xx.d -o..\..\output\startup_st
-m32f767xx.o -IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP
-\2.15.2\Drivers\CMSIS\Device\ST\STM32F7xx\Include --predefine="__UVISION_VERSIO
-N SETA 539" --predefine="STM32F767xx SETA 1" --list=..\..\output\startup_stm32f
-767xx.lst ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\arm\startup_
-stm32f767xx.s
+m32f767xx.o -ID:\STM32\Gamer_Stm32\Projects\MDK-ARM\RTE -IC:\Keil_v5\ARM\PACK\K
+eil\STM32F7xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include -IC:\Keil_v5\
+ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 521" --predefine="STM32F7
+67xx SETA 1" --list=..\..\output\startup_stm32f767xx.lst ..\..\Drivers\CMSIS\De
+vice\ST\STM32F7xx\Source\Templates\arm\startup_stm32f767xx.s
 
 
 

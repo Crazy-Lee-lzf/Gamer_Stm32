@@ -3,7 +3,7 @@
 ..\..\output\snake.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
 ..\..\output\snake.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h
 ..\..\output\snake.o: ..\..\Drivers\CMSIS\Include\core_cm7.h
-..\..\output\snake.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\snake.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\snake.o: ..\..\Drivers\CMSIS\Include\cmsis_version.h
 ..\..\output\snake.o: ..\..\Drivers\CMSIS\Include\cmsis_compiler.h
 ..\..\output\snake.o: ..\..\Drivers\CMSIS\Include\cmsis_armcc.h
@@ -15,7 +15,7 @@
 ..\..\output\snake.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h
 ..\..\output\snake.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
 ..\..\output\snake.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-..\..\output\snake.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stddef.h
+..\..\output\snake.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\..\output\snake.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h
 ..\..\output\snake.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_exti.h
 ..\..\output\snake.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio.h
@@ -80,12 +80,12 @@
 ..\..\output\snake.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_mdios.h
 ..\..\output\snake.o: ..\..\Drivers\CMSIS\Include\core_cm7.h
 ..\..\output\snake.o: ..\..\Drivers\./SYSTEM/usart/usart.h
-..\..\output\snake.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\snake.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\snake.o: ..\..\Drivers\./SYSTEM/delay/delay.h
 ..\..\output\snake.o: ..\..\Drivers\./BSP/LED/led.h
 ..\..\output\snake.o: ..\..\Drivers\./BSP/MPU/mpu.h
 ..\..\output\snake.o: ..\..\Drivers\./BSP/LCD/lcd.h
-..\..\output\snake.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\snake.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\..\output\snake.o: ..\..\Drivers\./BSP/KEY/key.h
 ..\..\output\snake.o: ..\..\Drivers\./BSP/SDRAM/sdram.h
 ..\..\output\snake.o: ..\..\Drivers\./BSP/BTIM/btim.h

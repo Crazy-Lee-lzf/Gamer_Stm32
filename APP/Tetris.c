@@ -21,6 +21,7 @@ static uint8_t Start = 0;
 static uint8_t over = 1;
 
 static uint8_t map[12][22];
+static uint8_t lastmap[12][22];
 
 
 void Draw_Block(uint8_t x, uint8_t y){
@@ -33,6 +34,10 @@ void Draw_Block(uint8_t x, uint8_t y){
     lcd_fill(Startx + x * Len + 6, Starty + y * Len + 6, Startx + (x + 1) * Len - 6, Starty + (y + 1) * Len - 6, BLACK);
 }
 
+void Remove_Block(uint8_t x, uint8_t y){
+		lcd_fill(Startx + x * Len, Starty + y * Len, Startx + (x + 1) * Len, Starty + (y + 1) * Len , Back);
+}
+
 Tetris Block[8];
 static Tetris cur;
 
@@ -40,7 +45,7 @@ void Update(Tetris New){
     uint8_t i;
     for(i = 0;i < 4;i++){
         uint8_t xx = New.x + New.type[New.cur][i][0], yy = New.y + New.type[New.cur][i][1];
-        map[xx][yy] = 2;
+        map[xx][yy] = 1;
     }
 }
 
@@ -128,9 +133,15 @@ void Tetris_Init(void) {
     memcpy(Block[7].type[2], t71, sizeof(t71));
     memcpy(Block[7].type[3], t72, sizeof(t72));
 
+		lcd_clear(Back);
+
+    lcd_fill(Startx + Len - 5, Starty + Len - 5, Startx + (N + 1) * Len + 5, Starty + Len - 1, BLUE);
+    lcd_fill(Startx + Len - 5, Starty + (M + 1) * Len + 1, Startx + (N + 1) * Len + 5, Starty + (M + 1) * Len + 5, BLUE);
+
+    lcd_fill(Startx + Len - 5, Starty + Len - 5, Startx + Len - 1, Starty + (M + 1) * Len, BLUE);				//×ó
+    lcd_fill(Startx + (N + 1) * Len + 1, Starty + Len - 5, Startx + (N + 1) * Len + 5, Starty + (M + 1) * Len, BLUE);  //ÓÒ
 
 }
-
 uint8_t Check(Tetris New){
     uint8_t i;
     for(i = 0;i < 4;i++){
@@ -142,21 +153,15 @@ uint8_t Check(Tetris New){
 
 
 void Tetris_Refresh(void){
-    lcd_clear(Back);
-    Update(cur);
-    uint8_t i, j;
-
-    lcd_fill(Startx + Len - 5, Starty + Len - 5, Startx + (N + 1) * Len + 5, Starty + Len, BLUE);
-    lcd_fill(Startx + Len - 5, Starty + (M + 1) * Len, Startx + (N + 1) * Len + 5, Starty + (M + 1) * Len + 5, BLUE);
-
-    lcd_fill(Startx + Len - 5, Starty + Len - 5, Startx + Len, Starty + (M + 1) * Len + 5, BLUE);
-    lcd_fill(Startx + (N + 1) * Len, Starty + Len - 5, Startx + (N + 1) * Len + 5, Starty + (M + 1) * Len + 5, BLUE);
-
+		Update(cur);
+		uint8_t i, j;
     for(i = 1;i <= N;i++){
         for(j = 1;j <= M;j++){
-            if(map[i][j] != 0){
-                Draw_Block(i ,j);
+            if(map[i][j] != lastmap[i][j]){
+                if(map[i][j] != 0) Draw_Block(i ,j);
+							  else Remove_Block(i, j);
             }
+						lastmap[i][j] = map[i][j];
         }
     }
 }

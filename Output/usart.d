@@ -3,7 +3,7 @@
 ..\..\output\usart.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
 ..\..\output\usart.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h
 ..\..\output\usart.o: ..\..\Drivers\CMSIS\Include\core_cm7.h
-..\..\output\usart.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\usart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\usart.o: ..\..\Drivers\CMSIS\Include\cmsis_version.h
 ..\..\output\usart.o: ..\..\Drivers\CMSIS\Include\cmsis_compiler.h
 ..\..\output\usart.o: ..\..\Drivers\CMSIS\Include\cmsis_armcc.h
@@ -15,7 +15,7 @@
 ..\..\output\usart.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h
 ..\..\output\usart.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
 ..\..\output\usart.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-..\..\output\usart.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stddef.h
+..\..\output\usart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\..\output\usart.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h
 ..\..\output\usart.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_exti.h
 ..\..\output\usart.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio.h
@@ -80,4 +80,4 @@
 ..\..\output\usart.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_mdios.h
 ..\..\output\usart.o: ..\..\Drivers\CMSIS\Include\core_cm7.h
 ..\..\output\usart.o: ..\..\Drivers\./SYSTEM/usart/usart.h
-..\..\output\usart.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\usart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
