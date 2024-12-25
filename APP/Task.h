@@ -19,6 +19,8 @@ void Check_Key0(void);
 void Check_Key1(void);
 void Check_Key2(void);
 void Check_Key3(void);
+void Display(void);
+void Home(void);
 
 #endif
 

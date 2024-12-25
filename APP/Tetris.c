@@ -13,15 +13,17 @@
 
 
 static const uint8_t N = 10, M = 20;
-static const uint16_t Startx = 50, Starty = 130;
+static const uint16_t Startx = 50, Starty = 135;
 static const uint16_t Back = 0xAD90;
 static const uint16_t Len = 30;
 
 static uint8_t Start = 0;
-static uint8_t over = 1;
+static uint8_t over = 0;
 
 static uint8_t map[12][22];
 static uint8_t lastmap[12][22];
+
+static int score = 0;
 
 
 void Draw_Block(uint8_t x, uint8_t y){
@@ -38,8 +40,22 @@ void Remove_Block(uint8_t x, uint8_t y){
 		lcd_fill(Startx + x * Len, Starty + y * Len, Startx + (x + 1) * Len, Starty + (y + 1) * Len , Back);
 }
 
-Tetris Block[8];
+void Draw_Block_Upcoming(uint8_t x, uint8_t y){
+    uint16_t Startx = 10, Starty = 10;
+    lcd_fill(Startx + x * Len, Starty + y * Len, Startx + (x + 1) * Len, Starty + y * Len + 2, BLACK);
+    lcd_fill(Startx + x * Len, Starty + (y + 1) * Len - 2, Startx + (x + 1) * Len, Starty + (y + 1) * Len, BLACK);
+
+    lcd_fill(Startx + x * Len, Starty + y * Len, Startx + x * Len + 2, Starty + (y + 1) * Len, BLACK);
+    lcd_fill(Startx + (x + 1) * Len - 2, Starty + y * Len, Startx + (x + 1) * Len, Starty + (y + 1) * Len, BLACK);
+
+    lcd_fill(Startx + x * Len + 6, Starty + y * Len + 6, Startx + (x + 1) * Len - 6, Starty + (y + 1) * Len - 6, BLACK);
+}
+
+
+static Tetris Block[8];
 static Tetris cur;
+static Tetris NextBlock;
+
 
 void Update(Tetris New){
     uint8_t i;
@@ -138,8 +154,11 @@ void Tetris_Init(void) {
     lcd_fill(Startx + Len - 5, Starty + Len - 5, Startx + (N + 1) * Len + 5, Starty + Len - 1, BLUE);
     lcd_fill(Startx + Len - 5, Starty + (M + 1) * Len + 1, Startx + (N + 1) * Len + 5, Starty + (M + 1) * Len + 5, BLUE);
 
-    lcd_fill(Startx + Len - 5, Starty + Len - 5, Startx + Len - 1, Starty + (M + 1) * Len, BLUE);				//×ó
-    lcd_fill(Startx + (N + 1) * Len + 1, Starty + Len - 5, Startx + (N + 1) * Len + 5, Starty + (M + 1) * Len, BLUE);  //ÓÒ
+    lcd_fill(Startx + Len - 5, Starty + Len - 5, Startx + Len - 1, Starty + (M + 1) * Len, BLUE);				//ï¿½ï¿½
+    lcd_fill(Startx + (N + 1) * Len + 1, Starty + Len - 5, Startx + (N + 1) * Len + 5, Starty + (M + 1) * Len, BLUE);  //ï¿½ï¿½
+
+    uint8_t next = 1 + rand() % 7;
+    NextBlock = Block[next];
 
 }
 uint8_t Check(Tetris New){
@@ -153,22 +172,28 @@ uint8_t Check(Tetris New){
 
 
 void Tetris_Refresh(void){
-		Update(cur);
-		uint8_t i, j;
+    Update(cur);
+    uint8_t i, j;
     for(i = 1;i <= N;i++){
         for(j = 1;j <= M;j++){
             if(map[i][j] != lastmap[i][j]){
                 if(map[i][j] != 0) Draw_Block(i ,j);
-							  else Remove_Block(i, j);
+                else Remove_Block(i, j);
             }
-						lastmap[i][j] = map[i][j];
+            lastmap[i][j] = map[i][j];
         }
     }
 }
 
 void New_Block(void){
+    cur = NextBlock;
     uint8_t next = 1 + rand() % 7;
-    cur = Block[next];
+    NextBlock = Block[next];
+
+    lcd_fill(10, 10, 130, 130, Back);
+    for(int i = 0;i < 4;i++){
+        Draw_Block_Upcoming(NextBlock.type[0][i][0], NextBlock.type[0][i][1]);
+    }
     if(Check(cur) == 0){
         over = 1;
         Update(cur);
@@ -219,6 +244,7 @@ void Tetris_Down(void){
         cur.y ++;
     }
     else {
+        score += 4;
         uint8_t i, j, k;
         for(i = 0;i < 4;i++){
             uint8_t xx = cur.x + cur.type[cur.cur][i][0], yy = cur.y + cur.type[cur.cur][i][1];
@@ -233,6 +259,7 @@ void Tetris_Down(void){
                 }
             }
             if(ok == 1){
+                score += 20;
                 for(k = j;k > 0;k --){
                     for(i = 1;i <= N;i++){
                         map[i][k] = map[i][k - 1];
@@ -243,7 +270,12 @@ void Tetris_Down(void){
         }
         New_Block();
     }
+     char s[20];
+    g_back_color = Back;
+    sprintf(s, "Score: %5d", score);
+    lcd_show_string(250, 50, 200, 32, 32, s, RED);
     Tetris_Refresh();
+    g_back_color = WHITE;
 }
 
 void Tetris_Right(void){

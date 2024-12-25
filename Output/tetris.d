@@ -3,7 +3,7 @@
 ..\..\output\tetris.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
 ..\..\output\tetris.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h
 ..\..\output\tetris.o: ..\..\Drivers\CMSIS\Include\core_cm7.h
-..\..\output\tetris.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\tetris.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\tetris.o: ..\..\Drivers\CMSIS\Include\cmsis_version.h
 ..\..\output\tetris.o: ..\..\Drivers\CMSIS\Include\cmsis_compiler.h
 ..\..\output\tetris.o: ..\..\Drivers\CMSIS\Include\cmsis_armcc.h
@@ -15,7 +15,7 @@
 ..\..\output\tetris.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h
 ..\..\output\tetris.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
 ..\..\output\tetris.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-..\..\output\tetris.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\..\output\tetris.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\..\output\tetris.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h
 ..\..\output\tetris.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_exti.h
 ..\..\output\tetris.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio.h
@@ -80,15 +80,15 @@
 ..\..\output\tetris.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_mdios.h
 ..\..\output\tetris.o: ..\..\Drivers\CMSIS\Include\core_cm7.h
 ..\..\output\tetris.o: ..\..\Drivers\./SYSTEM/usart/usart.h
-..\..\output\tetris.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\tetris.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\tetris.o: ..\..\Drivers\./SYSTEM/delay/delay.h
 ..\..\output\tetris.o: ..\..\Drivers\./BSP/LED/led.h
 ..\..\output\tetris.o: ..\..\Drivers\./BSP/MPU/mpu.h
 ..\..\output\tetris.o: ..\..\Drivers\./BSP/LCD/lcd.h
-..\..\output\tetris.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\tetris.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\..\output\tetris.o: ..\..\Drivers\./BSP/KEY/key.h
 ..\..\output\tetris.o: ..\..\Drivers\./BSP/SDRAM/sdram.h
 ..\..\output\tetris.o: ..\..\Drivers\./BSP/BTIM/btim.h
 ..\..\output\tetris.o: ..\..\APP\Task.h
 ..\..\output\tetris.o: ..\..\APP\Tetris.h
-..\..\output\tetris.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\tetris.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\string.h

@@ -3,7 +3,7 @@
 ..\..\output\task.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
 ..\..\output\task.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h
 ..\..\output\task.o: ..\..\Drivers\CMSIS\Include\core_cm7.h
-..\..\output\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\task.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\..\output\task.o: ..\..\Drivers\CMSIS\Include\cmsis_version.h
 ..\..\output\task.o: ..\..\Drivers\CMSIS\Include\cmsis_compiler.h
 ..\..\output\task.o: ..\..\Drivers\CMSIS\Include\cmsis_armcc.h
@@ -15,7 +15,7 @@
 ..\..\output\task.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h
 ..\..\output\task.o: ..\..\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h
 ..\..\output\task.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h
-..\..\output\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\..\output\task.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\..\output\task.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h
 ..\..\output\task.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_exti.h
 ..\..\output\task.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio.h
@@ -80,14 +80,15 @@
 ..\..\output\task.o: ..\..\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_mdios.h
 ..\..\output\task.o: ..\..\Drivers\CMSIS\Include\core_cm7.h
 ..\..\output\task.o: ..\..\Drivers\./SYSTEM/usart/usart.h
-..\..\output\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\..\output\task.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\task.o: ..\..\Drivers\./SYSTEM/delay/delay.h
 ..\..\output\task.o: ..\..\Drivers\./BSP/LED/led.h
 ..\..\output\task.o: ..\..\Drivers\./BSP/MPU/mpu.h
 ..\..\output\task.o: ..\..\Drivers\./BSP/LCD/lcd.h
-..\..\output\task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\task.o: D:\Program Files\Keil_V5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\..\output\task.o: ..\..\Drivers\./BSP/KEY/key.h
 ..\..\output\task.o: ..\..\Drivers\./BSP/SDRAM/sdram.h
 ..\..\output\task.o: ..\..\APP\Task.h
 ..\..\output\task.o: ..\..\APP\Snake.h
 ..\..\output\task.o: ..\..\APP\Tetris.h
+..\..\output\task.o: ..\..\APP\MyPic.h
